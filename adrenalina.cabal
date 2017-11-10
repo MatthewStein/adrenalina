@@ -1,0 +1,23 @@
+name:                adrenalina
+version:             0.1.0.0
+author:              Matthew Stein
+maintainer:          joomy@cattheory.com
+copyright:           2017 Matthew Stein
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Lib
+  build-depends:       base >= 4.7 && < 5
+                     , Euterpea
+  default-language:    Haskell2010
+
+executable adrenalina
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , adrenalina
+                     , Euterpea
+  default-language:    Haskell2010
