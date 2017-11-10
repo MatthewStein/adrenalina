@@ -11,3 +11,5 @@ stack install
 adrenalina music.midi
 ```
 will create a MIDI file named `music.midi`.
+
+Since most browsers cannot play MIDI files, [we also include the MP3 version of the song in the repo.](https://github.com/joom/adrenalina/raw/master/music.mp3)
